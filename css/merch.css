@@ -15,6 +15,7 @@ body {
   background: var(--negro);
   color: white;
   font-family: "acumin-pro", sans-serif;
+  overflow-x: hidden;
 }
 
 /* NAVEGACION */
@@ -209,62 +210,7 @@ body {
   .nav {
     padding: 20px;
   }
-  .navegador {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px 10px;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .navegador ul {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-  }
-  .navegador li {
-    font-size: 1.2rem;
-  }
-  .navegador ul li a {
-    padding: 6px;
-  }
-  .products-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 15px;
-    gap: 25px;
-  }
-  
-  .product-card {
-    width: 100%;
-    max-width: 380px;
-  }
-  
-  .img-box {
-    height: auto;
-  }
-  
-  .img-box img {
-    height: auto;
-    object-fit: contain;
-    background: #0d0d0d;
-  } /* <-- Acá estaba la llave faltante */
 
-  .cart {
-    width: 100%;
-    right: -100%;
-  }
-  
-  .cart.active {
-    right: 0;
-  }
-  body {
-    overflow-x: hidden;
-  }
   .navegador {
     flex-direction: column;
     align-items: center;
@@ -272,9 +218,11 @@ body {
     gap: 15px;
     padding: 20px 10px;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .navegador ul {
     flex-direction: column;
     gap: 12px;
@@ -282,12 +230,15 @@ body {
     width: 100%;
     padding: 0;
   }
+
   .navegador li {
     font-size: 1.2rem;
   }
+
   .navegador ul li a {
     padding: 6px;
   }
+
   .products-container {
     flex-direction: column;
     align-items: center;
@@ -296,19 +247,19 @@ body {
   }
   
   .product-card {
-    width: 95%; /* Le da un pequeño margen estético a los lados */
+    width: 95%;
     max-width: 380px;
   }
   
   .img-box {
     width: 100%;
-    height: 280px; /* Mantiene una altura controlada en celulares */
+    height: 280px;
   }
   
   .img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Evita que queden espacios vacíos negros */
+    object-fit: cover;
   }
 
   .cart {
