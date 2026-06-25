@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Fotos/fondo.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: "acumin-pro", sans-serif;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+p {
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+.scene {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.cross {
+  position: absolute;
+  bottom: 20px;
+  width: 12px;
+  height: 90px;
+  animation: float 2.5s ease-in-out infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+.cross::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -18px;
+  width: 48px;
+  height: 10px;
+  background: currentColor;
+}
+.c1 {
+  left: 25%;
+  color: #00ffc3;
+  animation-delay: 0s;
+}
+.c2 {
+  left: 50%;
+  color: #ffff00;
+  animation-delay: 0.3s;
+}
+.c3 {
+  left: 75%;
+  color: #ff005d;
+  animation-delay: 0.6s;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Christ Fest</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="https://use.typekit.net/eft0ddk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/eft0ddk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/eft0ddk.css">
+</head>
+<body>
+
+
+<nav class="navegador">
+  <div class="logo">idEVENTS</div>
+<ul>
+  <li><a href="/html/Itinerario.html">Itinerario</a></li>
+   <li><a href="/html/FAQ.html">FAQ</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+  <li><a href="#llegar">¿Cómo llegar?</a></li>
+</ul>
+</nav>
+
+<section class="portada">
+  <div class="principal"></div>
+  <h1 class="jesus">JESUS</h1>
+  <h2 class="tituloprincipal">Christ Fest</h2>
+  <p class="fecha">[NOVIEMBRE del 10 al 12, Estadio River Plate, Argentina]</p>
+  <p class="verso">
+    Todo lo que respira alabe al Señor.<br>
+    Cuando miles de voces adoran al unísono,<br> 
+    la tierra tiembla y el cielo responde.<br>
+    Este no es solo un festival;<br>
+    es un punto de encuentro entre sonido, fe y propósito.
+  </p>
+</section>
+  
+  <section class="CajaContador">
+    <div class="tex">
+      <p>Cuenta <span>CADA SEGUNDO</span><br> hasta el evento.</p>
+    </div>
+    <div class="contador">
+      <div><span id="dias">00</span><p>días</p></div>
+      <div><span id="horas">00</span><p>horas</p></div>
+      <div><span id="minutos">00</span><p>minutos</p></div>
+      <div><span id="segundos">00</span><p>segundos</p></div>
+    </div>
+  </section>
+
+<div class="contenedoryoutube">
+<iframe 
+  src="https://www.youtube.com/embed/XCp_0V9ZFPw?list=RDXCp_0V9ZFPw"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+</div>
+
+  </div>
+  <section class="espacio"></section>
+  <script src="script.js"></script>
+<section class="programa">
+<h1>PROGRAMA</h1>
+<p class="sub">[Itinerario completo]</p>
+<a href="/html/Itinerario.html"
+   target="_blank">
+   <h2>¿Nos organizamos?</h2>
+</a>
+<div class="linea">
+<div class="lineamovible activo" onclick="mostrarDia('viernes', this)">
+  <h3>Viernes</h3>
+  <span>Noviembre 10</span>
+</div>
+<div class="lineamovible" onclick="mostrarDia('sabado', this)">
+  <h3>Sábado</h3>
+  <span>Noviembre 11</span>
+</div>
+<div class="lineamovible" onclick="mostrarDia('domingo', this)">
+  <h3>Domingo</h3>
+  <span>Noviembre 12</span>
+</div>
+</div>
+
+<div id="viernes" class="contenido-dia">
+<div class="personaje">
+  <p class="hora">21:00 | 22:00</p>
+  <img src="/Fotos/personajes-04.jpg" alt="">
+  <div class="info">
+    <h4>Brandon Lake</h4>
+    <p>Es un cantante y líder de adoración estadounidense reconocido por su estilo intenso y emotivo.</p>
+  </div>
+</div>
+<div class="personaje">
+  <p class="hora">22:00 | 23:00</p>
+  <img src="/Fotos/personajes-05.jpg" alt="">
+  <div class="info">
+    <h4>Redimi2</h4>
+    <p>Referente de la música cristiana urbana en habla hispana.</p>
+  </div>
+</div>
+<div class="personaje">
+  <p class="hora">23:00 | 24:00</p>
+  <img src="/Fotos/personajes-06.jpg" alt="">
+  <div class="info">
+    <h4>DJPV</h4>
+    <p>DJ y productor brasileño reconocido por fusionar música electrónica y fe.</p>
+  </div>
+</div>
+</div>
+
+<div id="sabado" class="contenido-dia" style="display:none;">
+<div class="personaje">
+  <p class="hora">21:00 | 22:00</p>
+  <img src="/Fotos/personajes-01.jpg" alt="">
+  <div class="info">
+    <h4>Generación 12</h4>
+    <p>Es una banda de música cristiana contemporánea originaria de Argentina, reconocida por combinar adoración, alabanza y sonidos modernos para transmitir el mensaje de Jesucristo.</p>
+  </div>
+</div>
+<div class="personaje">
+  <p class="hora">22:00 | 23:00</p>
+  <img src="/Fotos/personajes-02.jpg" alt="">
+  <div class="info">
+    <h4>Marcos Witt</h4>
+    <p>Cantante, compositor y pastor cristiano reconocido internacionalmente por su influencia en la música de adoración en español.</p>
+  </div>
+</div>
+<div class="personaje">
+  <p class="hora">23:00 | 24:00</p>
+  <img src="/Fotos/personajes-03.jpg" alt="">
+  <div class="info">
+    <h4>Kiosko</h4>
+    <p>Banda argentina de música cristiana contemporánea que combina pop y rock con letras de adoración y esperanza. Sus canciones buscan acercar a las personas a Dios a través de un mensaje positivo y espiritual.</p>
+  </div>
+</div>
+</div>
+
+<div id="domingo" class="contenido-dia" style="display:none;">
+<div class="personaje">
+  <p class="hora">21:00 | 22:00</p>
+  <img src="/Fotos/personajes-07.jpg" alt="">
+  <div class="info">
+    <h4>Rescate</h4>
+    <p>Banda argentina de rock cristiano fundada en los años 80, reconocida por fusionar rock, pop y mensajes de fe. Es una de las agrupaciones más influyentes de la música cristiana en Latinoamérica.</p>
+  </div>
+</div>
+<div class="personaje">
+  <p class="hora">22:00 | 23:00</p>
+  <img src="/Fotos/personajes-08.jpg" alt="">
+  <div class="info">
+    <h4>Rojo</h4>
+    <p>Es una reconocida banda cristiana originaria de Bolivia que ha marcado a varias generaciones con su música de adoración y alabanza..</p>
+  </div>
+</div>
+<div class="personaje">
+  <p class="hora">23:00 | 24:00</p>
+  <img src="/Fotos/personajes-09.jpg" alt="">
+  <div class="info">
+    <h4>Samu Robles</h4>
+    <p>Es un cantante y compositor ecuatoriano de música cristiana contemporánea, reconocido por fusionar géneros urbanos como el R&B, pop, trap y reggaetón con mensajes de fe y espiritualidad.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<div class="patrocinadores"></div>
+<div class="cantantes"></div>
+
+    <section>
+      <p class="artistas">
+        Brandon Lake | Chris Tomlin | Tauren Wells | Maverick City Music | Elevation Worship | Bethel Music | Kari Jobe | Cory Asbury | Redimi2 | DJ PV
+      </p>
+    </section>
+<div class="merch1">
+  <article class="merch11">
+    <img src="/Fotos/buzo.webp" alt="Buzo Hoodie" class="merch-img">
+    <h3 class="merchprecio">$59.99</h3>
+    <p class="merchtipo">Buzo | “Aquí estoy, envíame a mí”</p>
+    <p class="descripcion">Isaías 6:8</p>
+    <a href="/html/merch01.html" class="obtenerm">Obtener</a>
+  </article>
+
+  <article class="merch11">
+    <img src="/Fotos/gorro.webp" alt="Taza Botella" class="merch-img">
+    <h3 class="merchprecio">$39.99</h3>
+    <p class="merchtipo">Gorro | “Todo lo puedo en Cristo”</p>
+    <p class="descripcion">Filipenses 4:13</p>
+    <a href="/html/merch01.html" class="obtenerm">Obtener</a>
+  </article>
+
+  <article class="merch11">
+    <img src="/Fotos/tote.webp" alt="Tote Bag" class="merch-img">
+    <h3 class="merchprecio">$199.99</h3>
+    <p class="merchtipo">Tote | “Jesús es mi canción”</p>
+    <p class="descripcion">Juan 3:16</p>
+   <a href="/html/merch01.html" class="obtenerm">Obtener</a>
+  </article>
+</div>
+
+
+      <section class="tickets">
+        <h2>TICKETS</h2>
+        <p class="sub01">[Elegí tu entrada]</p>
+      </section>
+      <div class="sacatuticket">
+        <article class="ticketbasico">
+          <h3 class="precio">$99.99</h3>
+            <p class="tipo">Básico</p>
+              <span class="dia">1 Día</span>
+               <p class="descripcion">
+                Acceso a UN día del evento indistinto
+               </p>
+           <a href="/html/checkout.html" class="obtener">OBTENER</a>
+        </article>
+        <article class="ticketbasico">
+          <h3 class="precio">$199.99</h3>
+          <p class="tipo">Intermedio</p>
+          <span class="dia">2 Días</span>
+          <p class="descripcion">
+            Acceso a DOS días del evento indistinto
+          </p>
+          <a href="/html/checkout.html" class="obtener">OBTENER</a>
+        </article>
+        <article class="ticketpremium">
+          <h3 class="precio">$299.99</h3>
+          <p class="tipop">Premium</p>
+          <span class="dia">3 Días</span>
+          <p class="descripcionp">
+            Acceso a LOS TRES días del evento
+          </p>
+          <a href="/html/checkout.html" class="obtener">OBTENER</a>
+        </article>
+      </div>
+    </section>
+
+  <section class="como-llegar" id="llegar">
+  <div class="overlay"></div>
+  <div class="contenido-mapa">
+  
+    <h2>COMO LLEGAR</h2>
+      <a 
+      href="https://www.google.com/maps/place/Estadio+Monumental/@-34.5475936,-58.4500312,16.87z/data=!3m1!5s0x95bcb43a7c50d62d:0xe71d0f79da3b8da5!4m14!1m7!3m6!1s0x95bcb43a7fd32d4d:0x5a1385f00be3db72!2sMuseo+River+Plate!8m2!3d-34.5465963!4d-58.4484825!16s%2Fg%2F11c3v6z24n!3m5!1s0x95bcb43ae6018ddf:0x3d7f60a75bfa308a!8m2!3d-34.5455302!4d-58.4496732!16zL20vMDVmZDM4?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+      target="_blank"
+      class="map-link">
+      [Cliquea aquí]
+    </a>
+    <p>Indicaciones, transporte disponible, mapa</p>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+      <section class="contactanos">
+        <h2>CONTACTANOS</h2>
+        <p class="sub01">[Para recibir mas novedades sobre proximos eventos]</p>
+      </section>
+    <div class="form-box">
+      <form>
+        <div class="columna izquierda">
+          <div class="input-group">
+            <input type="text" required>
+            <label>Apellidos</label>
+          </div>
+          <div class="input-group">
+            <input type="text" required>
+            <label>Nombres</label>
+          </div>
+          <div class="input-group">
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="check-line">
+            <input type="checkbox">
+            <span>
+              Doy permiso para contactarme<br>
+              a este correo electrónico.
+            </span>
+          </div>
+        </div>
+        <div class="columna derecha">
+          <div class="input-group mensaje">
+            <textarea required></textarea>
+            <label>Deja tu mensaje</label>
+          </div>
+          <p class="legal">
+            Este sitio está protegido por reCAPTCHA y aplican la Política de
+            Privacidad y los Términos de Servicio de Google.
+          </p>
+          <button><a href="/html/mensajenviado.html">Enviar</a></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+<footer class="footer">
+  <div class="footer-box">
+    <div class="footer-links">
+      <div class="columna-footer">
+        <a href="#">WEEKLY THEMES</a>
+        <a href="#">PRE - SALE FAQS</a>
+        <a href="#">SUBIT A TICKET</a>
+      </div>
+      <div class="columna-footer">
+        <a href="#">SERVICES</a>
+        <a href="#">THEME TWEAK</a>
+      </div>
+      <div class="columna-footer">
+        <a href="#">SHOWCASE</a>
+        <a href="#">SUPPORT</a>
+      </div>
+      <div class="columna-footer">
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">AFFILIATES</a>
+        <a href="#">RESOURCES</a>
+      </div>
+    </div>
+
+    <div class="redes">
+      <a href="#"><img src="/Fotos/redes-07.png" alt=""></a>
+      <a href="#"><img src="/Fotos/redes-08.png" alt=""></a>
+      <a href="#"><img src="/Fotos/redes-09.png" alt=""></a>
+      <a href="#"><img src="/Fotos/redes-10.png" alt=""></a>
+      <a href="#"><img src="/Fotos/redes-11.png" alt=""></a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Christian Fest. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+<script src="/js/script.js"></script>
+<script src="/js/script1.js"></script>
+<script src="/js/script2.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("viernes").style.display = "block";
+    document.getElementById("sabado").style.display = "none";
+    document.getElementById("domingo").style.display = "none";
+
+});
+</script>
+</body>
+</html>

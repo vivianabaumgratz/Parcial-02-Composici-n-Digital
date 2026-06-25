@@ -1,0 +1,807 @@
+:root {
+  --verde: #00ffc3;
+  --amarillo: #ffff00;
+  --rosa: #ff005d;
+  --negro: #000009;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--negro);
+  color: white;
+  width: 100%;
+  font-family: "acumin-pro", sans-serif;
+}
+
+.navegador {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  background: var(--negro);
+  align-items: center;
+}
+.logo {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navegador ul {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+}
+.navegador li {
+  font-size: 1.5rem;
+}
+.navegador ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "acumin-pro", sans-serif;
+  transition: .3s;
+}
+.navegador ul li a:hover {
+  color: var(--verde);
+}
+.compre {
+  background: var(--amarillo);
+  font-weight: bold;
+  padding: 8px 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "acumin-pro", sans-serif;
+}
+
+.portada {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Fotos/fondo.jpg') center/cover no-repeat;
+  background-blend-mode: darken;
+  position: relative;
+  text-align: center;
+  padding-top: 120px;
+}
+.principal {
+  position: absolute;
+  inset: 0;
+  background: var(--negro);
+}
+.portada * {
+  position: relative;
+}
+.jesus {
+  font-size: 400px;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+}
+.tituloprincipal {
+  font-size: 200px;
+  font-family: "above-the-beyond", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--amarillo);
+  margin-top: -620px;
+}
+.fecha {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: -90px;
+  color: var(--rosa);
+}
+.verso {
+  margin-top: 5%;
+  font-size: 24px;
+  opacity: 0.8;
+}
+.Botones {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.ns {
+  background: var(--verde);
+  padding: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--negro);
+}
+
+
+.CajaContador {
+  background: var(--verde);
+  color: white;
+  padding: 60px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.contador {
+  display: flex;
+  font-family: "acumin-pro", sans-serif;
+  font-style: oblique;
+  gap: 60px;
+  margin-bottom: 220px;
+}
+.contador div {
+  text-align: center;
+}
+.contador span {
+  font-size: 60px;
+  font-weight: 1000;
+}
+.tex p {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  gap: 60px;
+  margin-bottom: 220px;
+  margin-left: 50px;
+}
+.tex span {
+  color: var(--amarillo);
+}
+.contenedoryoutube {
+  position: relative;
+  margin: -100px auto;
+  width: 70%;
+  z-index: 2;
+}
+.contenedoryoutube iframe {
+  width: 100%;
+  height: 500px;
+  border: 2px solid var(--amarillo);
+}
+.espacio {
+  background: var(--negro);
+  height: 300px;
+}
+.hero {
+  height: 80vh;
+  background: linear-gradient(180deg, #000 0%, #05070d 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.programa {
+  text-align: center;
+  padding: 60px;
+}
+.programa h1 {
+  font-size: 100px;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  color: var(--verde);
+}
+.sub {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin-top: -60px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.contenido {
+  max-width: 800px;
+  margin: 40px auto;
+}
+.linea {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  border-bottom: 2px solid #ffffff;
+}
+.lineamovible {
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lineamovible:hover {
+  transform: translateY(-5px);
+  color: var(--rosa);
+}
+.lineamovible span {
+  color: #18a999;
+  font-size: 18px;
+}
+.lineamovible.activo {
+  color: #00d6c9;
+  border-bottom: 3px solid #00d6c9;
+}
+.personaje {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--negro);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.hora {
+  width: 40%;
+  color: #ccc;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-size: x-large;
+  flex-shrink: 0;
+}
+.personaje img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.info h4, .info p {
+  text-align: left;
+  margin: 0;
+}
+.info p {
+  margin-top: 5px;
+}
+.personaje:hover {
+  transform: translateY(-5px);
+  color: var(--verde);
+}
+.contenido-dia {
+  width: 100%;
+}
+
+.cantantes {
+  height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Fotos/portada cantantes_Mesa de trabajo 1.jpg') center/cover no-repeat;
+  background-blend-mode: darken;
+  position: relative;
+  padding-top: 120px;
+}
+.patrocinadores {
+  height: 15vh;
+  background: url('/Fotos/patrocinadores-03.png') center/cover no-repeat;
+  position: relative;
+}
+.artistas {
+  color: var(--verde);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.merch {
+  text-align: left;
+  padding: 60px;
+}
+.merch h2, .tickets h2 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 100px;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+}
+.merch h2 { color: var(--rosa); }
+.tickets h2 { color: var(--amarillo); }
+.sub01 {
+  color: rgb(255, 255, 255);
+  margin-left: 100px;
+  font-size: 50px;
+  margin-top: -60px;
+}
+.merch-header h2, .tickets-header h2 {
+  font-size: 3rem;
+  color: var(--amarillo);
+}
+.merch1, .sacatuticket {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.merch11, .ticketbasico, .ticketpremium {
+  background: #1a252a;
+  padding: 40px;
+  width: 450px;
+  position: relative;
+  transition: transform 0.3s;
+}
+.merch11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.merchprecio, .precio {
+  font-size: 3rem;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+}
+.merchprecio { color: var(--rosa); }
+.precio { color: var(--verde); }
+.merchtipo, .merchtipop, .tipo, .tipop {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+.merchtipop, .tipop, .descripcionp {
+  color: var(--negro);
+}
+.ticketpremium {
+  background: var(--amarillo);
+  padding: 80px 40px;
+}
+.dia {
+  background: #ff2e78;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+.descripcion, .descripcionp {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.obtenerm, .obtener {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.obtenerm {
+  border: 3px solid #ffffff;
+  color: var(--rosa);
+}
+.obtenerm:hover {
+  background: var(--verde);
+  color: rgb(255, 255, 255);
+}
+.obtener {
+  border: 3px solid var(--verde);
+  color: #00d1c7;
+}
+.obtener:hover {
+  background: var(--verde);
+  color: rgb(255, 255, 255);
+}
+.ticketbasico:hover, .ticketpremium:hover {
+  transform: translateY(-10px);
+}
+.merch-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.como-llegar {
+  margin-top: 60px;
+  position: relative;
+  width: 100%;
+  height: 520px;
+  background: url('/Fotos/mapa.png') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,15,1) 100%);
+}
+.contenido-mapa {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 85px;
+}
+.map-link {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: -50px;
+  color: white;
+}
+.contenido-mapa h2 {
+  font-size: clamp(70px, 8vw, 130px);
+  line-height: .9;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 900;
+  letter-spacing: -3px;
+  color: #ff3b7f;
+}
+.contenido-mapa p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.contactanos {
+  text-align: left;
+  padding: 60px;
+}
+.contactanos h2 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 100px;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  color: var(--verde);
+}
+.form-box {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  background: var(--verde);
+  padding: 70px 60px;
+  position: relative;
+}
+form {
+  display: flex;
+  gap: 80px;
+}
+.columna {
+  flex: 1;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+.input-group input, .input-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 0;
+  font-size: 1.8rem;
+  font-family: "acumin-pro", sans-serif;
+}
+.input-group textarea {
+  resize: none;
+  height: 190px;
+}
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  pointer-events: none;
+  transition: .3s;
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+  top: -15px;
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: bold;
+}
+.check-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 10px;
+}
+.check-line input {
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+}
+.check-line span {
+  font-size: .65rem;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  max-width: 230px;
+}
+.legal {
+  margin-top: 10px;
+  max-width: 320px;
+  font-size: .65rem;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+}
+button {
+  margin-top: 45px;
+  width: 125px;
+  height: 48px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover {
+  background: rgb(0, 0, 0);
+  color: #18b8a9;
+}
+button a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+}
+
+.footer {
+  width: 100%;
+  padding: 80px 20px;
+  background: var(--negro);
+  display: flex;
+  justify-content: center;
+}
+.footer-box {
+  width: 100%;
+  max-width: 1050px;
+  background: var(--amarillo);
+  padding: 50px 60px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.columna-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.columna-footer a {
+  text-decoration: none;
+  color: black;
+  font-size: .7rem;
+  font-weight: 700;
+  transition: .3s;
+}
+.columna-footer a:hover {
+  opacity: .6;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 55px;
+}
+.redes img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: .8rem;
+  color: #ff3b7f;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .navegador {
+    padding: 25px 40px;
+  }
+  .navegador ul {
+    gap: 60px;
+  }
+  .jesus {
+    font-size: 300px;
+  }
+  .tituloprincipal {
+    font-size: 150px;
+    margin-top: -460px;
+  }
+  .fecha {
+    font-size: 1.8rem;
+    margin-top: -70px;
+  }
+  .contador {
+    gap: 40px;
+  }
+  .contador span {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navegador {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 10px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navegador ul {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  .navegador li {
+    font-size: 1.2rem;
+  }
+  .navegador ul li a {
+    padding: 6px;
+  }
+  .compre {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+  .portada {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-size: cover;
+  }
+  .jesus {
+    font-size: 90px;
+  }
+  .tituloprincipal {
+    font-size: 55px;
+    margin-top: -130px;
+  }
+  .fecha {
+    font-size: 1rem;
+    margin-top: -10px;
+    padding: 0 15px;
+  }
+  .verso {
+    width: 90%;
+    margin: 20px auto 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .CajaContador {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .tex p {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+  }
+  .contador {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 0;
+  }
+  .contador span {
+    font-size: 32px;
+  }
+  .contenedoryoutube {
+    width: 95%;
+    margin: -20px auto;
+  }
+  .contenedoryoutube iframe {
+    height: 220px;
+  }
+  .espacio {
+    height: 150px;
+  }
+  .programa h1 {
+    font-size: 60px;
+  }
+  .sub, .sub01 {
+    font-size: 28px;
+    margin-top: -20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .linea {
+    gap: 20px;
+  }
+  .personaje {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hora {
+    width: 100%;
+  }
+  .info h4, .info p {
+    text-align: center;
+  }
+  .merch h2, .tickets h2 {
+    font-size: 60px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .merch1, .sacatuticket {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+  .merch11, .ticketbasico, .ticketpremium {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+  .merch-img {
+    height: auto;
+    object-fit: contain;
+    background: #111b1f;
+  }
+  .merchprecio, .precio {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .merchtipo, .tipo, .tipop {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .obtenerm, .obtener {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+  }
+  .contactanos {
+    padding: 30px 15px;
+    text-align: center;
+  }
+  .contactanos h2 {
+    font-size: 50px;
+    margin-left: 0;
+    line-height: 1;
+  }
+  .form-box {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  form {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .columna {
+    width: 100%;
+  }
+  .input-group {
+    margin-bottom: 25px;
+  }
+  .input-group input, .input-group textarea {
+    font-size: 1rem;
+  }
+  .input-group label {
+    font-size: .9rem;
+  }
+  .input-group textarea {
+    height: 140px;
+  }
+  .check-line span {
+    max-width: none;
+    font-size: .8rem;
+  }
+  .legal {
+    max-width: 100%;
+    font-size: .75rem;
+    line-height: 1.5;
+  }
+  button {
+    width: 100%;
+    height: 55px;
+    margin-top: 25px;
+  }
+}

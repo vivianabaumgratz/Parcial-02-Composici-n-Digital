@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "acumin-pro", sans-serif;
+}
+body {
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Fotos/fondo.jpg') center/cover no-repeat;
+  color: white;
+  width: 100%;
+  font-family: "acumin-pro", sans-serif;
+}
+.navegador {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  background: var(--negro);
+  align-items: center;
+}
+.logo {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navegador ul {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+}
+.navegador li {
+  font-size: 1.5rem;
+}
+.navegador ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "acumin-pro", sans-serif;
+  transition: .3s;
+}
+.navegador ul li a:hover {
+  color: var(--verde);
+}
+.principal {
+  position: absolute;
+  inset: 0;
+  background:  #000009;
+}
+.portada * {
+  position: relative;
+}
+.programa {
+  text-align: center;
+  padding: 60px;
+}
+.programa h1 {
+  font-size: 100px;
+  font-family:"acumin-pro-extra-condensed", sans-serif ; ;
+  color: #ff3b7f;
+}
+.sub {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin-top: -60px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.contenido {
+  max-width: 800px;
+  margin: 40px auto;
+}
+.linea {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  border-bottom: 2px solid #ffffff;
+}
+.lineamovible {
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/*transicion de color, me esta faltando poder cliquear y que se deplegue otra columna de tres cantantes pero sabra Dios como se ehace*/
+.lineamovible:hover {
+  transform: translateY(-5px);
+  color: #ff005d;
+}
+.lineamovible span {
+  color: #ff3b7f;
+  font-size: 18px;
+}
+.personaje {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.hora {
+  width: 40%;
+  color: #ccc;
+  font-family:"acumin-pro-extra-condensed", sans-serif ;
+  font-size:x-large;
+  flex-shrink:0;
+}
+.personaje img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.info h4 {
+  text-align: left;
+  margin: 0;
+}
+.info p {
+  text-align: left;
+  margin: 5px 0 0;
+}
+.personaje:hover {
+  transform: translateY(-5px);
+  color: #ff3b7f;
+}
+.footer{
+  width:100%;
+  padding:80px 20px;
+  background:#000009;
+  display:flex;
+  justify-content:center;
+}
+.footer-box{
+  width:100%;
+  max-width:1050px;
+  background:#ffff00;
+  padding:50px 60px;
+}
+.footer-links{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+.columna-footer{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.columna-footer a{
+  text-decoration:none;
+  color:black;
+  font-size:.7rem;
+  font-weight:700;
+  transition:.3s;
+}
+.columna-footer a:hover{
+  opacity:.6;
+}
+.redes{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin-top:55px;
+}
+.redes img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
+}
+.copyright{
+  text-align:center;
+  margin-top:20px;
+  font-size:.8rem;
+  color:#ff3b7f;
+}
+.lineamovible{
+  cursor:pointer;
+  transition:0.3s;
+}
+.lineamovible:hover{
+  color:#ffff00;
+}
+.lineamovible.activo{
+  color:#ffff00;
+}
+.contenido-dia{
+  width:100%;
+}
+
+
+
+@media screen and (max-width:480px){
+   body{
+    overflow-x:hidden;
+  }
+  .navegador{
+    flex-direction:column;
+    gap:15px;
+    padding:20px 15px;
+  }
+  .navegador ul{
+    flex-direction:column;
+    gap:12px;
+    text-align:center;
+  }
+  .navegador li{
+    font-size:1.1rem;
+  }
+  .programa{
+    padding:30px 15px;
+  }
+  .programa h1{
+    font-size:55px;
+    line-height:1;
+  }
+  .sub{
+    font-size:22px;
+    margin-top:10px;
+  }
+  .linea{
+    flex-direction:column;
+    gap:20px;
+    border-bottom:none;
+    margin-top:30px;
+  }
+  .lineamovible{
+    border-bottom:1px solid rgba(255,255,255,.2);
+    padding-bottom:15px;
+  }
+  .lineamovible span{
+    display:block;
+    margin-top:5px;
+    font-size:14px;
+  }
+  .personaje{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+    padding:15px;
+  }
+  .hora{
+    width:100%;
+    font-size:1.5rem;
+    text-align:center;
+    color:#ffff00;
+  }
+  .info{
+    width:100%;
+  }
+  .info h4{
+    text-align:center;
+    font-size:1.2rem;
+  }
+  .info p{
+    text-align:center;
+    font-size:.95rem;
+    line-height:1.6;
+  }
+  .footer-box{
+    padding:30px 20px;
+  }
+  .footer-links{
+    flex-direction:column;
+    text-align:center;
+    gap:25px;
+  }
+  .columna-footer{
+    align-items:center;
+  }
+  .redes{
+    flex-wrap:wrap;
+    gap:15px;
+  }
+  .portada{
+    height:40vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+.navegador{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:10px 5px;
+  }
+  .logo{
+    font-size:1rem;
+    text-align:center;
+  }
+  .navegador ul{
+    font-size:0.2rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    width:100%;
+    padding:0;
+    margin:0;
+  }
+  .navegador li{
+    font-size:0.2rem;
+  }
+  .navegador ul li a{
+    font-size:0.2rem;
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:8px;
+  }}
