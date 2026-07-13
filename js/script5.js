@@ -77,17 +77,17 @@ function update() {
             trail[trail.length-1].y
         );
 
-        gradient.addColorStop(0,"#ffff00");
-        gradient.addColorStop(.5,"#00ffe5");
-        gradient.addColorStop(1,"#ff2ea6");
+gradient.addColorStop(0.00, "#ffff00"); // Amarillo
+gradient.addColorStop(0.50, "#00ffc3"); // Verde
+gradient.addColorStop(1.00, "#ff005d"); // Rosa
 
         // Glow
         ctx.strokeStyle = gradient;
         ctx.lineWidth = 12;
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
-        ctx.shadowColor = "#ffffff";
-        ctx.shadowBlur = 40;
+ctx.shadowColor = "#00ffc3";
+ctx.shadowBlur = 45;
         ctx.stroke();
 
         // Línea principal
