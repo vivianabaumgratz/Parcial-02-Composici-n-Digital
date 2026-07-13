@@ -1,27 +1,27 @@
 const canvas = document.getElementById("cursorCanvas");
 const ctx = canvas.getContext("2d");
 
-function resize(){
+function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 }
 
-resize();
-window.addEventListener("resize", resize);
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
 
 let points = [];
 
-window.addEventListener("mousemove",(e)=>{
+window.addEventListener("mousemove", (e) => {
 
     points.push({
-        x:e.clientX,
-        y:e.clientY,
-        life:100
+        x: e.clientX,
+        y: e.clientY,
+        life: 120
     });
 
 });
 
-function animate(){
+function draw() {
 
     ctx.clearRect(0,0,canvas.width,canvas.height);
 
@@ -29,9 +29,9 @@ function animate(){
 
     for(let i=0;i<points.length;i++){
 
-        const p=points[i];
+        let p = points[i];
 
-        if(i===0){
+        if(i==0){
             ctx.moveTo(p.x,p.y);
         }else{
             ctx.lineTo(p.x,p.y);
@@ -40,16 +40,15 @@ function animate(){
         p.life--;
     }
 
-    ctx.strokeStyle="#d8ff00";
+    ctx.strokeStyle="#eaff00";
     ctx.lineWidth=2;
-    ctx.lineJoin="round";
     ctx.lineCap="round";
+    ctx.lineJoin="round";
     ctx.stroke();
 
-    points=points.filter(p=>p.life>0);
+    points = points.filter(p=>p.life>0);
 
-    requestAnimationFrame(animate);
-
+    requestAnimationFrame(draw);
 }
 
-animate();
+draw();
