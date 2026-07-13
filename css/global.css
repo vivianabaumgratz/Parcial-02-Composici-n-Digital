@@ -260,8 +260,10 @@ a {
 }
 
 .patrocinadores{
+height: 15vh;
+  background: url('/Fotos/patrocinadores-03.png') center/cover no-repeat;
+  position: relative;
     width:100%;
-    height:90px;
 
     display:flex;
     align-items:center;
