@@ -29,7 +29,6 @@ function draw() {
     if (points.length > 1) {
 
         ctx.beginPath();
-
         ctx.moveTo(points[0].x, points[0].y);
 
         for (let i = 1; i < points.length - 1; i++) {
@@ -46,19 +45,44 @@ function draw() {
 
         }
 
-        // Primera pasada: glow
-        ctx.strokeStyle = "#ff3bbd";
+        //==========================
+        // GRADIENTE
+        //==========================
+
+        const gradient = ctx.createLinearGradient(
+            points[0].x,
+            points[0].y,
+            points[points.length - 1].x,
+            points[points.length - 1].y
+        );
+
+        gradient.addColorStop(0, "#FFFF00");   // Amarillo
+        gradient.addColorStop(0.5, "#00F5FF"); // Cian
+        gradient.addColorStop(1, "#FF2E8B");   // Rosa
+
+        //==========================
+        // GLOW
+        //==========================
+
+        ctx.strokeStyle = gradient;
         ctx.lineWidth = 12;
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
-        ctx.shadowColor = "#ff3bbd";
-        ctx.shadowBlur = 40;
+
+        ctx.shadowColor = "#FFFFFF";
+        ctx.shadowBlur = 35;
+
         ctx.stroke();
 
-        // Segunda pasada: línea brillante
+        //==========================
+        // LINEA CENTRAL
+        //==========================
+
         ctx.shadowBlur = 0;
-        ctx.strokeStyle = "#ff8fe2";
-        ctx.lineWidth = 4;
+
+        ctx.strokeStyle = gradient;
+        ctx.lineWidth = 5;
+
         ctx.stroke();
 
     }
