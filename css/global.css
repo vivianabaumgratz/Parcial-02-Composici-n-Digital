@@ -297,6 +297,12 @@ height: 15vh;
     animation:scrollRight 20s linear infinite;
 
 }
+.marquee1 {
+    display: flex;
+    width: max-content;
+    /* Cambiamos el nombre de la animación aquí */
+    animation: scrollLeft 20s linear infinite; 
+}
 .marquee span{
 
     flex-shrink:0;
