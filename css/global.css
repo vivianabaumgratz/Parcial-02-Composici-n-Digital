@@ -328,6 +328,31 @@ height: 15vh;
     animation:glitch .25s infinite;
 
 }
+.marquee1 span{
+
+    flex-shrink:0;
+
+    padding-right:100px;
+
+    font-size:70px;
+
+    font-family:"acumin-pro-extra-condensed",sans-serif;
+
+    font-weight:900;
+
+    letter-spacing:6px;
+
+    white-space:nowrap;
+
+    color:var(--amarillo);
+
+    text-shadow:
+        -4px 0 var(--verde),
+         4px 0 var(--rosa);
+
+    animation:glitch .25s infinite;
+
+}
 @keyframes scrollRight{
 
     from{
@@ -342,6 +367,14 @@ height: 15vh;
 
     }
 
+}
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* El valor negativo lo desplaza hacia la izquierda */
+    }
 }
 
 
