@@ -256,7 +256,7 @@ a {
     height: 40vh;
     background:
         linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-        url("../Fotos/portada cantantes_Mesa de trabajo 1.jpg");
+        url("../Fotos/portada cantantes_Mesa de trabajo 1.jpg")center/cover no-repeat;
 
     background-position:center;
     background-size:cover;
