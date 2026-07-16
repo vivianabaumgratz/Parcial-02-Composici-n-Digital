@@ -90,7 +90,7 @@ body {
 }
 .portada > * {
   position: relative;
-  z-index: 2;
+  z-index: 10; /* 
 }
 @keyframes zoomLento {
   0% {
@@ -119,12 +119,6 @@ body {
   }
 }
 
-
-.principal {
-  position: absolute;
-  inset: 0;
-  background: var(--negro);
-}
 .portada * {
   position: relative;
 }
