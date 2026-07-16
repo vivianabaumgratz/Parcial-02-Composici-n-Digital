@@ -66,13 +66,13 @@ body {
   text-decoration: none;
   font-family: "acumin-pro", sans-serif;
 }
+
 .portada {
   height: 100vh;
   position: relative;
   text-align: center;
   padding-top: 120px;
   overflow: hidden;
-  background: var(--negro); /* Fondo de seguridad */
 }
 .portada::before {
   content: "";
@@ -83,20 +83,14 @@ body {
   height: 100%;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Fotos/fondo.jpg') center/cover no-repeat;
   background-blend-mode: darken;
-  z-index: 1; 
+  z-index: 1;  
   animation: 
     zoomLento 20s ease-in-out infinite alternate, 
     glitchFondo 6s infinite;
-  pointer-events: none; 
 }
 .portada > * {
   position: relative;
-  z-index: 5 !important;
-}
-.principal {
-  position: relative;
-  min-height: 100vh;
-  background: transparent;
+  z-index: 2;
 }
 @keyframes zoomLento {
   0% {
@@ -106,7 +100,6 @@ body {
     transform: scale(1.15);
   }
 }
-
 @keyframes glitchFondo {
   0%, 85%, 89%, 100% {
     filter: none;
@@ -126,10 +119,15 @@ body {
   }
 }
 
+
+.principal {
+  position: absolute;
+  inset: 0;
+  background: var(--negro);
+}
 .portada * {
   position: relative;
 }
-
 .jesus {
   font-size: 400px;
   font-family: "acumin-pro-extra-condensed", sans-serif;
