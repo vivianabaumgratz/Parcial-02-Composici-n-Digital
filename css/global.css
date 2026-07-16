@@ -105,33 +105,68 @@ body {
   content: attr(data-text);
   position: absolute;
   top: 0;
-  left: 3px; /* Aumentado ligeramente para notar más el desfase */
+  left: 3px;
   width: 100%;
   height: 100%;
   color: rgba(255, 0, 80, 0.6); 
   background: transparent;
   overflow: hidden;
-  /* CORRECCIÓN: Usamos clip-path inset por defecto */
   clip-path: inset(0 0 0 0); 
   animation: glitch-anim-2 2s infinite linear alternate-reverse;
 }
 
 @keyframes glitch-anim-1 {
-  0% { clip-path: inset(40% 0 61% 0); }
-  20% { clip-path: inset(92% 0 1% 0); }
-  40% { clip-path: inset(15% 0 80% 0); }
-  60% { clip-path: inset(80% 0 5% 0); }
-  80% { clip-path: inset(5% 0 92% 0); }
-  100% { clip-path: inset(40% 0 43% 0); }
+  0% { 
+    clip-path: inset(0 40% 0 61%); 
+    transform: translateX(-5px); 
+  }
+  20% { 
+    clip-path: inset(0 92% 0 1%); 
+    transform: translateX(5px); 
+  }
+  40% { 
+    clip-path: inset(0 15% 0 80%); 
+    transform: translateX(-3px); 
+  }
+  60% { 
+    clip-path: inset(0 80% 0 5%); 
+    transform: translateX(4px); 
+  }
+  80% { 
+    clip-path: inset(0 5% 0 92%); 
+    transform: translateX(-4px); 
+  }
+  100% { 
+    clip-path: inset(0 40% 0 43%); 
+    transform: translateX(0); 
+  }
 }
 
 @keyframes glitch-anim-2 {
-  0% { clip-path: inset(25% 0 58% 0); transform: skew(-3deg); }
-  20% { clip-path: inset(64% 0 26% 0); transform: skew(2deg); }
-  40% { clip-path: inset(5% 0 85% 0); transform: skew(-1deg); }
-  60% { clip-path: inset(85% 0 10% 0); transform: skew(4deg); }
-  80% { clip-path: inset(34% 0 61% 0); transform: skew(-2deg); }
-  100% { clip-path: inset(10% 0 85% 0); transform: skew(1deg); }
+  0% { 
+    clip-path: inset(0 25% 0 58%); 
+    transform: translateX(5px) skewY(-3deg); 
+  }
+  20% { 
+    clip-path: inset(0 64% 0 26%); 
+    transform: translateX(-5px) skewY(2deg); 
+  }
+  40% { 
+    clip-path: inset(0 5% 0 85%); 
+    transform: translateX(3px) skewY(-1deg); 
+  }
+  60% { 
+    clip-path: inset(0 85% 0 10%); 
+    transform: translateX(-4px) skewY(4deg); 
+  }
+  80% { 
+    clip-path: inset(0 34% 0 61%); 
+    transform: translateX(2px) skewY(-2deg); 
+  }
+  100% { 
+    clip-path: inset(0 10% 0 85%); 
+    transform: translateX(0) skewY(1deg); 
+  }
 }
 .tituloprincipal {
   font-size: 200px;
