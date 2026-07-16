@@ -74,7 +74,6 @@ body {
   position: relative;
 }
 .jesus {
-   font-size: 400px;
   font-size: clamp(150px, 25vw, 400px); 
   font-family: "acumin-pro-extra-condensed", sans-serif;
   font-weight: 900;
@@ -82,12 +81,12 @@ body {
   margin: 0;
   line-height: 0.8;
   text-transform: uppercase;
-
   position: relative;
   display: inline-block;
   user-select: none;
 }
 
+/* Copia de la izquierda (Efecto Cian / Azul) */
 .jesus::before {
   content: attr(data-text);
   position: absolute;
@@ -102,6 +101,8 @@ body {
   clip-path: rect(0 0 0 0); /* Oculto por defecto */
   animation: glitch-anim-1 3s infinite linear alternate-reverse;
 }
+
+/* Copia de la derecha (Efecto Rojo / Magenta) */
 .jesus::after {
   content: attr(data-text);
   position: absolute;
