@@ -68,57 +68,19 @@ body {
 }
 
 .portada {
+.portada {
   height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Fotos/fondo.jpg') center/cover no-repeat;
+  background-blend-mode: darken;
   position: relative;
   text-align: center;
   padding-top: 120px;
-  overflow: hidden;
 }
-.portada::before {
-  content: "";
+.principal {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Fotos/fondo.jpg') center/cover no-repeat;
-  background-blend-mode: darken;
-  z-index: 1;  
-  animation: 
-    zoomLento 20s ease-in-out infinite alternate, 
-    glitchFondo 6s infinite;
+  inset: 0;
+  background: var(--negro);
 }
-.portada > * {
-  position: relative;
-  z-index: 10; /* 
-}
-@keyframes zoomLento {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.15);
-  }
-}
-@keyframes glitchFondo {
-  0%, 85%, 89%, 100% {
-    filter: none;
-    transform: scale(1) translate(0, 0);
-  }
-  86% {
-    filter: hue-rotate(90deg) saturate(1.5) contrast(1.2);
-    transform: translate(-5px, 3px) skewX(5deg);
-  }
-  88% {
-    filter: hue-rotate(-50deg) brightness(1.4);
-    transform: translate(5px, -3px) skewX(-5deg);
-  }
-  90% {
-    filter: invert(0.1) saturate(2);
-    transform: translate(-3px, -2px);
-  }
-}
-
 .portada * {
   position: relative;
 }
