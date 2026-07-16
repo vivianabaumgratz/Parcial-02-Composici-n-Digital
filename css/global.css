@@ -74,102 +74,10 @@ body {
   position: relative;
 }
 .jesus {
-  font-size: clamp(150px, 25vw, 400px); 
+  font-size: 400px;
   font-family: "acumin-pro-extra-condensed", sans-serif;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.4); 
-  margin: 0;
-  line-height: 0.8;
-  text-transform: uppercase;
-  position: relative;
-  display: inline-block;
-  user-select: none;
-}
-
-.jesus::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: -3px;
-  width: 100%;
-  height: 100%;
-  color: rgba(0, 255, 255, 0.6); 
-  background: transparent;
-  overflow: hidden;
-  clip-path: inset(0 0 0 0); 
-  /* CAMBIO: De 2s a 4s para hacerlo más lento */
-  animation: glitch-anim-1 4s infinite linear alternate-reverse;
-}
-
-.jesus::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 3px;
-  width: 100%;
-  height: 100%;
-  color: rgba(255, 0, 80, 0.6); 
-  background: transparent;
-  overflow: hidden;
-  clip-path: inset(0 0 0 0); 
-  /* CAMBIO: De 2s a 4s para hacerlo más lento */
-  animation: glitch-anim-2 4s infinite linear alternate-reverse;
-}
-
-/* BARRIDO: Principalmente de Izquierda a Derecha */
-@keyframes glitch-anim-1 {
-  0% { 
-    clip-path: inset(0 80% 0 0%); /* Bloque en el extremo izquierdo (0% al 20%) */
-    transform: translateX(-6px); 
-  }
-  20% { 
-    clip-path: inset(0 60% 0 20%); /* Se desplaza al centro-izquierdo (20% al 40%) */
-    transform: translateX(4px); 
-  }
-  40% { 
-    clip-path: inset(0 40% 0 40%); /* Centro (40% al 60%) */
-    transform: translateX(-3px); 
-  }
-  60% { 
-    clip-path: inset(0 20% 0 60%); /* Centro-derecha (60% al 80%) */
-    transform: translateX(5px); 
-  }
-  80% { 
-    clip-path: inset(0 0% 0 80%); /* Extremo derecho (80% al 100%) */
-    transform: translateX(-5px); 
-  }
-  100% { 
-    clip-path: inset(0 50% 0 35%); /* Retorno rápido al centro */
-    transform: translateX(0); 
-  }
-}
-
-/* BARRIDO: Principalmente de Derecha a Izquierda */
-@keyframes glitch-anim-2 {
-  0% { 
-    clip-path: inset(0 0% 0 80%); /* Extremo derecho (80% al 100%) */
-    transform: translateX(6px) skewY(-2deg); 
-  }
-  20% { 
-    clip-path: inset(0 20% 0 60%); /* Centro-derecha (60% al 80%) */
-    transform: translateX(-4px) skewY(1deg); 
-  }
-  40% { 
-    clip-path: inset(0 40% 0 40%); /* Centro (40% al 60%) */
-    transform: translateX(3px) skewY(-3deg); 
-  }
-  60% { 
-    clip-path: inset(0 60% 0 20%); /* Centro-izquierdo (20% al 40%) */
-    transform: translateX(-5px) skewY(2deg); 
-  }
-  80% { 
-    clip-path: inset(0 80% 0 0%); /* Extremo izquierdo (0% al 20%) */
-    transform: translateX(4px) skewY(-1deg); 
-  }
-  100% { 
-    clip-path: inset(0 30% 0 55%); /* Retorno rápido */
-    transform: translateX(0) skewY(0deg); 
-  }
+  color: rgba(255, 255, 255, 0.3);
 }
 .tituloprincipal {
   font-size: 200px;
