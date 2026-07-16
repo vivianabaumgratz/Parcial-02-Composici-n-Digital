@@ -495,6 +495,7 @@ a {
 }
 
 /* --- COMO LLEGAR --- */
+
 .como-llegar {
   margin-top: 60px;
   position: relative;
@@ -545,6 +546,32 @@ a {
 }
 
 /* --- CONTACTANOS --- */
+.sub01 {
+  color: #fff;
+  font-size: 50px;
+  margin-top: -60px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+
+  animation:
+    typing 5s steps(22, end) infinite,
+    blink .7s step-end infinite;
+}
+
+@keyframes typing {
+  0%   { width: 0; }
+  40%  { width: 22ch; } /* termina de escribir */
+  70%  { width: 22ch; } /* espera */
+  100% { width: 0; }    /* se borra */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .contactanos {
   text-align: left;
   padding: 60px;
