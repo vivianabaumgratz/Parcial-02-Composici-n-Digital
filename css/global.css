@@ -57,7 +57,6 @@ body {
 .navegador ul li a:hover {
   color: var(--verde);
 }
-
 .compre {
   background: var(--amarillo);
   font-weight: bold;
@@ -67,7 +66,6 @@ body {
   font-family: "acumin-pro", sans-serif;
 }
 
-.portada {
 .portada {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Fotos/fondo.jpg') center/cover no-repeat;
@@ -122,6 +120,7 @@ body {
   text-decoration: none;
   color: var(--negro);
 }
+
 
 /* --- CONTADOR --- */
 .CajaContador {
