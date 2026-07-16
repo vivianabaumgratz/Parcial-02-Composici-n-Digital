@@ -1037,4 +1037,350 @@ button a {
     margin-top: 25px;
   }
 }
+/* ==========================================
+   MEDIA QUERIES - RESPONSIVE COMPLETO
+   ========================================== */
 
+/* 1. TABLETAS EN FORMATO HORIZONTAL Y LAPTOPS PEQUEÑAS (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+  .navegador {
+    padding: 25px 40px;
+  }
+  .navegador ul {
+    gap: 40px;
+  }
+  .navegador li {
+    font-size: 1.2rem;
+  }
+
+  .jesus {
+    font-size: 250px;
+  }
+  .tituloprincipal {
+    font-size: 130px;
+    margin-top: -380px;
+  }
+  .fecha {
+    font-size: 1.6rem;
+    margin-top: -60px;
+  }
+
+  .CajaContador {
+    padding: 50px 60px;
+  }
+  .contador {
+    gap: 30px;
+  }
+  .contador span {
+    font-size: 45px;
+  }
+  .tex p {
+    font-size: 1.6rem;
+    margin-left: 20px;
+  }
+
+  .merch h2, .tickets h2 {
+    font-size: 80px;
+    margin-left: 20px;
+  }
+}
+
+/* 2. TABLETAS EN FORMATO VERTICAL (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  .navegador {
+    padding: 20px 30px;
+  }
+  .navegador ul {
+    gap: 20px;
+  }
+
+  .jesus {
+    font-size: 180px;
+  }
+  .tituloprincipal {
+    font-size: 90px;
+    margin-top: -260px;
+  }
+  .fecha {
+    font-size: 1.3rem;
+    margin-top: -40px;
+  }
+  .verso {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  .CajaContador {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    text-align: center;
+  }
+  .tex p {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 1.5rem;
+  }
+  .contador {
+    justify-content: center;
+    margin-bottom: 0;
+    gap: 40px;
+  }
+
+  .contenedoryoutube {
+    width: 85%;
+    margin: -50px auto;
+  }
+  .contenedoryoutube iframe {
+    height: 380px;
+  }
+
+  .programa h1 {
+    font-size: 80px;
+  }
+  .sub, .sub01 {
+    font-size: 38px;
+  }
+
+  .merch h2, .tickets h2 {
+    font-size: 70px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .sub01 {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .form-box {
+    padding: 50px 40px;
+  }
+  
+  .footer-links {
+    justify-content: space-around;
+  }
+}
+
+/* 3. TABLETAS PEQUEÑAS / PHABLETS (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .navegador {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .navegador ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .jesus {
+    font-size: 140px;
+  }
+  .tituloprincipal {
+    font-size: 75px;
+    margin-top: -200px;
+  }
+
+  .contenedoryoutube {
+    width: 90%;
+  }
+  .contenedoryoutube iframe {
+    height: 300px;
+  }
+
+  .linea {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .personaje {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hora {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .info h4, .info p {
+    text-align: center;
+  }
+
+  .contactanos h2 {
+    font-size: 70px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+/* 4. DISPOSITIVOS MÓVILES (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navegador {
+    padding: 20px 10px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navegador ul {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 0;
+  }
+  .navegador li {
+    font-size: 1.2rem;
+  }
+  .navegador ul li a {
+    padding: 6px;
+  }
+  .compre {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+
+  .portada {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-size: cover;
+  }
+  .jesus {
+    font-size: 90px;
+  }
+  .tituloprincipal {
+    font-size: 55px;
+    margin-top: -130px;
+  }
+  .fecha {
+    font-size: 1rem;
+    margin-top: -10px;
+    padding: 0 15px;
+  }
+  .verso {
+    width: 90%;
+    margin: 20px auto 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .CajaContador {
+    padding: 30px 15px;
+  }
+  .tex p {
+    font-size: 1.3rem;
+  }
+  .contador {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .contador span {
+    font-size: 32px;
+  }
+
+  .contenedoryoutube {
+    width: 95%;
+    margin: -20px auto;
+  }
+  .contenedoryoutube iframe {
+    height: 220px;
+  }
+  .espacio {
+    height: 150px;
+  }
+
+  .programa h1 {
+    font-size: 50px;
+  }
+  .sub, .sub01 {
+    font-size: 24px;
+    margin-top: -10px;
+  }
+
+  .merch h2, .tickets h2 {
+    font-size: 50px;
+  }
+  .merch1, .sacatuticket {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+  .merch11, .ticketbasico, .ticketpremium {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+  .merch-img {
+    height: auto;
+    object-fit: contain;
+    background: #111b1f;
+  }
+  .merchprecio, .precio {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .merchtipo, .tipo, .tipop {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .obtenerm, .obtener {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .contactanos {
+    padding: 30px 15px;
+  }
+  .contactanos h2 {
+    font-size: 50px;
+    line-height: 1;
+  }
+  .form-box {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  form {
+    gap: 25px;
+  }
+  .input-group {
+    margin-bottom: 25px;
+  }
+  .input-group input, .input-group textarea {
+    font-size: 1.2rem;
+  }
+  .input-group label {
+    font-size: 1rem;
+  }
+  .input-group textarea {
+    height: 140px;
+  }
+  .check-line span {
+    max-width: none;
+    font-size: .8rem;
+  }
+  .legal {
+    max-width: 100%;
+    font-size: .75rem;
+    line-height: 1.5;
+  }
+  button {
+    width: 100%;
+    height: 55px;
+    margin-top: 25px;
+  }
+}
