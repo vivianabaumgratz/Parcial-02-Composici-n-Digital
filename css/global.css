@@ -311,39 +311,11 @@ a {
   background: url('../Fotos/patrocinadores-03.png') center/cover no-repeat;
   position: relative;
 }
-
-
-section {
-  display: inline-block;
-  overflow: hidden; 
-  white-space: nowrap; 
-  width: 0; 
-  border-right: 3px solid transparent; 
-}
-
-
-section:hover {
-  border-right-color: #000;
-  animation: 
-    maquinaEscribir 4s steps(140) forwards, 
-    parpadeoCursor 0.75s step-end infinite alternate;
-}
-
-
 .artistas {
-  font-family: 'Courier New', Courier, monospace; 
-  margin: 0;
-}
-
-
-@keyframes maquinaEscribir {
-  from { width: 0; }
-  to { width: 140ch; } 
-
-
-@keyframes parpadeoCursor {
-  from, to { border-color: transparent }
-  50% { border-color: #000; } 
+  color: var(--verde);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .is-love {
