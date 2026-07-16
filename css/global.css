@@ -90,15 +90,15 @@ body {
   content: attr(data-text);
   position: absolute;
   top: 0;
-  left: -3px; /* Aumentado ligeramente para notar más el desfase */
+  left: -3px;
   width: 100%;
   height: 100%;
   color: rgba(0, 255, 255, 0.6); 
   background: transparent;
   overflow: hidden;
-  /* CORRECCIÓN: Usamos clip-path inset por defecto para asegurar compatibilidad */
   clip-path: inset(0 0 0 0); 
-  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+  /* CAMBIO: De 2s a 4s para hacerlo más lento */
+  animation: glitch-anim-1 4s infinite linear alternate-reverse;
 }
 
 .jesus::after {
@@ -112,60 +112,63 @@ body {
   background: transparent;
   overflow: hidden;
   clip-path: inset(0 0 0 0); 
-  animation: glitch-anim-2 2s infinite linear alternate-reverse;
+  /* CAMBIO: De 2s a 4s para hacerlo más lento */
+  animation: glitch-anim-2 4s infinite linear alternate-reverse;
 }
 
+/* BARRIDO: Principalmente de Izquierda a Derecha */
 @keyframes glitch-anim-1 {
   0% { 
-    clip-path: inset(0 40% 0 61%); 
-    transform: translateX(-5px); 
+    clip-path: inset(0 80% 0 0%); /* Bloque en el extremo izquierdo (0% al 20%) */
+    transform: translateX(-6px); 
   }
   20% { 
-    clip-path: inset(0 92% 0 1%); 
-    transform: translateX(5px); 
+    clip-path: inset(0 60% 0 20%); /* Se desplaza al centro-izquierdo (20% al 40%) */
+    transform: translateX(4px); 
   }
   40% { 
-    clip-path: inset(0 15% 0 80%); 
+    clip-path: inset(0 40% 0 40%); /* Centro (40% al 60%) */
     transform: translateX(-3px); 
   }
   60% { 
-    clip-path: inset(0 80% 0 5%); 
-    transform: translateX(4px); 
+    clip-path: inset(0 20% 0 60%); /* Centro-derecha (60% al 80%) */
+    transform: translateX(5px); 
   }
   80% { 
-    clip-path: inset(0 5% 0 92%); 
-    transform: translateX(-4px); 
+    clip-path: inset(0 0% 0 80%); /* Extremo derecho (80% al 100%) */
+    transform: translateX(-5px); 
   }
   100% { 
-    clip-path: inset(0 40% 0 43%); 
+    clip-path: inset(0 50% 0 35%); /* Retorno rápido al centro */
     transform: translateX(0); 
   }
 }
 
+/* BARRIDO: Principalmente de Derecha a Izquierda */
 @keyframes glitch-anim-2 {
   0% { 
-    clip-path: inset(0 25% 0 58%); 
-    transform: translateX(5px) skewY(-3deg); 
+    clip-path: inset(0 0% 0 80%); /* Extremo derecho (80% al 100%) */
+    transform: translateX(6px) skewY(-2deg); 
   }
   20% { 
-    clip-path: inset(0 64% 0 26%); 
-    transform: translateX(-5px) skewY(2deg); 
+    clip-path: inset(0 20% 0 60%); /* Centro-derecha (60% al 80%) */
+    transform: translateX(-4px) skewY(1deg); 
   }
   40% { 
-    clip-path: inset(0 5% 0 85%); 
-    transform: translateX(3px) skewY(-1deg); 
+    clip-path: inset(0 40% 0 40%); /* Centro (40% al 60%) */
+    transform: translateX(3px) skewY(-3deg); 
   }
   60% { 
-    clip-path: inset(0 85% 0 10%); 
-    transform: translateX(-4px) skewY(4deg); 
+    clip-path: inset(0 60% 0 20%); /* Centro-izquierdo (20% al 40%) */
+    transform: translateX(-5px) skewY(2deg); 
   }
   80% { 
-    clip-path: inset(0 34% 0 61%); 
-    transform: translateX(2px) skewY(-2deg); 
+    clip-path: inset(0 80% 0 0%); /* Extremo izquierdo (0% al 20%) */
+    transform: translateX(4px) skewY(-1deg); 
   }
   100% { 
-    clip-path: inset(0 10% 0 85%); 
-    transform: translateX(0) skewY(1deg); 
+    clip-path: inset(0 30% 0 55%); /* Retorno rápido */
+    transform: translateX(0) skewY(0deg); 
   }
 }
 .tituloprincipal {
