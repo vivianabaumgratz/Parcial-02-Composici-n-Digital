@@ -86,38 +86,35 @@ body {
   user-select: none;
 }
 
-/* Copia de la izquierda (Efecto Cian / Azul) */
 .jesus::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
-  left: -2px;
+  left: -3px; /* Aumentado ligeramente para notar más el desfase */
   width: 100%;
   height: 100%;
-  /* Color del glitch izquierdo (puedes usar un celeste/cian semitransparente) */
-  color: rgba(0, 255, 255, 0.5); 
+  color: rgba(0, 255, 255, 0.6); 
   background: transparent;
   overflow: hidden;
-  clip-path: rect(0 0 0 0); /* Oculto por defecto */
-  animation: glitch-anim-1 3s infinite linear alternate-reverse;
+  /* CORRECCIÓN: Usamos clip-path inset por defecto para asegurar compatibilidad */
+  clip-path: inset(0 0 0 0); 
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
 }
 
-/* Copia de la derecha (Efecto Rojo / Magenta) */
 .jesus::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
-  left: 2px;
+  left: 3px; /* Aumentado ligeramente para notar más el desfase */
   width: 100%;
   height: 100%;
-  /* Color del glitch derecho (un rojo/magenta semitransparente) */
-  color: rgba(255, 0, 80, 0.5); 
+  color: rgba(255, 0, 80, 0.6); 
   background: transparent;
   overflow: hidden;
-  clip-path: rect(0 0 0 0); /* Oculto por defecto */
-  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+  /* CORRECCIÓN: Usamos clip-path inset por defecto */
+  clip-path: inset(0 0 0 0); 
+  animation: glitch-anim-2 2s infinite linear alternate-reverse;
 }
-
 
 @keyframes glitch-anim-1 {
   0% { clip-path: inset(40% 0 61% 0); }
