@@ -134,7 +134,6 @@ body {
   font-weight: 900;
   color: rgba(255, 255, 255, 0.3);
 }
-
 .tituloprincipal {
   font-size: 200px;
   font-family: "above-the-beyond", sans-serif;
@@ -143,7 +142,6 @@ body {
   color: var(--amarillo);
   margin-top: -620px;
 }
-
 .fecha {
   font-family: "acumin-pro", sans-serif;
   font-size: 2rem;
@@ -152,18 +150,15 @@ body {
   margin-top: -90px;
   color: var(--rosa);
 }
-
 .verso {
   margin-top: 5%;
   font-size: 24px;
   opacity: 0.8;
 }
-
 .Botones {
   margin-top: 60px;
   margin-bottom: 100px;
 }
-
 .ns {
   background: var(--verde);
   padding: 20px;
